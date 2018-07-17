@@ -39,5 +39,6 @@ src/main/tools/
 #test
 src/test/
 
-#dao layer automatic generation configuration
+#dev file
+/src/main/resources/restLet.json
 /src/main/resources/generatorConfig.xml
