@@ -1,0 +1,43 @@
+*.class
+
+#package file
+#*.jar
+*.war
+*.ear
+
+#kdiff3 ignore
+*.orig
+
+#maven
+target/
+
+#eclipse ignore
+.settings/
+.project
+.classpath
+
+#idea
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+
+#temp file
+*.log
+*.cache
+*.patch
+*.tmp
+
+#system ignore
+.DS_Stroe
+Thumbs.db
+
+#tools
+src/main/tools/
+
+#test
+src/test/
+
+#dao layer automatic generation configuration
+/src/main/resources/generatorConfig.xml
