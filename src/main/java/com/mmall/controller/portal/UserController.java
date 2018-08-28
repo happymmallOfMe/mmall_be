@@ -168,7 +168,7 @@ public class UserController {
         if (currentUser == null) {
             return ServerResponse.createByErrorMessage("用户未登录");
         }
-        // 防治前端传输数据是被抓包，修改包内容提交过来的数据是伪造的，进而采用从当前会话中获得数据，这样可以保证数据不会被修改，
+        // 防止前端传输数据是被抓包，修改包内容提交过来的数据是伪造的，进而采用从当前会话中获得数据，这样可以保证数据不会被修改，
         user.setId(currentUser.getId());
         // user.setUsername(currentUser.getUsername());
         ServerResponse<User> response = iUserService.updateInformation(user);
@@ -181,7 +181,7 @@ public class UserController {
     }
 
     /**
-     * 获取个人信息（未登录，需由前段强制登录），进而采用update_information方法更新用户信息
+     * 获取个人信息（未登录，需由前端强制登录），进而采用update_information方法更新用户信息
      * @param session 当前会话
      * @return 返回包括用户信息的服务器返回数据
      */
